@@ -7,7 +7,7 @@ services:
       - "8090:8090"
       - "7077:7077"
     volumes:
-      - /Users/rahulpoolanchalil/ISM:/Users/rahulpoolanchalil/ISM
+      - /Users/rahulpoolanchalil/projects:/Users/rahulpoolanchalil/projects
     environment:
       - INIT_DAEMON_STEP=setup_spark
   spark-worker-1:
@@ -36,4 +36,4 @@ services:
       ports:
         - "18091:18091"
       volumes:
-        - /Users/rahulpoolanchalil/ISM/dev-28112022/ism-quantexa-project-repo:/Users/rahulpoolanchalil/ISM/dev-28112022/ism-quantexa-project-repo
+        - /Users/rahulpoolanchalil/projects:/Users/rahulpoolanchalil/projects
